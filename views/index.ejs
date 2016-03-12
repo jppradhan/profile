@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %> JP</h1>
-    <p>Welcome to <%= title %> JP</p>
-  </body>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css"/>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/animate.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+      <nav>
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">PROFILE</a></li>
+              <li><a href="#">SKILLS</a></li>
+              <li><a href="#">EDUCATION</a></li>
+              <li><a href="#">EXPERIENCE</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">PROFILE</a></li>
+              <li><a href="#">SKILLS</a></li>
+              <li><a href="#">EDUCATION</a></li>
+              <li><a href="#">EXPERIENCE</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    
+ 
+    <section class="landing-page">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 name">
+                <div class="valign-wrapper">
+                    <div class="valign">
+                        <h2>Jyoti Prakash Pradhan</h2>
+                        <h5 id="animated-text">front-end developer</h5>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="contact-info">
+      <div class="container">
+        <div class="row inner">
+          <div class="col s4">
+            <i class="material-icons">email</i>
+            <a class="info" href="mailto:er.jppradhan@gmail.com" title="">er.jppradhan@gmail.com</a>
+          </div>
+          <div class="col s4">
+            <i class="material-icons">call</i>
+            <a class="info" href="tel:+918971254440" title="">+91-8971254440</a>
+          </div>
+          <div class="col s4">
+            <i class="material-icons">location_on</i>
+            <span class="info">Bangalore</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h2>Jyoti Prakash</h2>
+              <h5>Front-end Developer.JS Programmer.Freelancer</h5>
+            </div>
+          </div>
+          <div class="row padding-top-40">
+            <div class="col s3 profile-pic">
+                <img src="/images/profile.jpg" alt="">
+            </div>
+            <div class="col s4">
+                <h5>SKILLSET</h5>
+                <h6>HTML5 / CSS3 / SASS</h6>
+                <div class="skill-bar">
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-off"></div>
+                </div>
+                <h6>JAVASCRIPT</h6>
+                <div class="skill-bar">
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                </div>
+                <h6>ANGULAR / REACT</h6>
+                <div class="skill-bar">
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-off"></div>
+                </div>
+                <h6>NODE JS</h6>
+                <div class="skill-bar">
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-on"></div>
+                  <div class="skill-rate-off"></div>
+                  <div class="skill-rate-off"></div>
+                </div>
+                <div class="profile-widget">
+                  <h5>Social Profiles</h5>
+                  <ul class="widget-social">
+                    <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+                </div>
+                
+            </div>
+            <div class="col s5">
+              <h5>PROFESIONAL PROFILE</h5>
+              <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
+              <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="/javascripts/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+</body>
+
 </html>
