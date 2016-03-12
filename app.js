@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 if( app.get('env') === 'development' ) {
-  app.use('/', routes);
+  app.use('/', underconstruction);
   app.use('/users', users);
 } else {
   app.use('/', underconstruction);
