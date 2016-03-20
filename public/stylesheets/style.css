@@ -638,10 +638,14 @@ h3 > .fa {
 .portfolio-item {
 	margin-bottom: 20px;
 	overflow: hidden;
+	height: 240px;
 }
 
 .portfolio-item-preview {
 	position: relative;
+}
+.portfolio-item .portfolio-item-preview img {
+	width: 100%;
 }
 
 .portfolio-item:hover .portfolio-item-preview {
@@ -783,4 +787,8 @@ h3 > .fa {
     left: 0px;
     top: 0px;
     width: 100%;
+}
+
+#profile, #cando{
+	visibility: hidden;
 }
