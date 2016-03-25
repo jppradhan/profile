@@ -23,10 +23,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-if( app.get('env') === 'development' ) {
+//if( app.get('env') === 'development' ) {
   app.use('/', routes);
   app.use('/users', users);
-}/* else {
+/*} else {
   app.use('/', underconstruction);
 }*/
 
