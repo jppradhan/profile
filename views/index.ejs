@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
     <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="/stylesheets/animate.css"/>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/owl.carousel.css"/>
     <link type="text/css" rel="stylesheet" href="/stylesheets/style.css"/>
     
     <!--Let browser know website is optimized for mobile-->
@@ -15,652 +16,579 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <!-- Preloader -->
 
-		<!-- Preloader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">
+            <div class="status-mes"><h4>Jyoti Prakash</h4></div>
+        </div>
+    </div>
 
-		<div id="preloader" style="display: none;">
-			<div id="status" style="display: none;">
-				<div class="status-mes"><h4>Jyoti Prakash</h4></div>
-			</div>
-		</div>
+    <!-- Navigation start -->
 
-		<!-- Navigation start -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
 
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="clearfix">
+                <div id="animate-menu" class="">
+                    <div class="menu_block"></div>
+                    <div class="menu_block"></div>
+                    <div class="menu_block"></div>
+                </div>
+                <a class="navbar-brand" href="#">Resume</a>
+            </div>
 
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Jyoti Prakash</a>
-				</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="fixed-menu">
+                <ul>
+                    <li class=""><a href="#intro">home</a></li>
+                    <li class=""><a href="#profile">Profile</a></li>
+                    <li class=""><a href="#services">Services</a></li>
+                    <li class=""><a href="#resume">Resume</a></li>
+                    <li class=""><a href="#portfolio">Portfolio</a></li>
+                    <li class="active"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class=""><a href="#intro">home</a></li>
-						<li class=""><a href="#profile">Profile</a></li>
-						<li class=""><a href="#services">Services</a></li>
-						<li class=""><a href="#resume">Resume</a></li>
-						<li class=""><a href="#portfolio">Portfolio</a></li>
-						<li class="active"><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+        </div>
+    </nav>
 
-			</div>
-		</nav>
+    <!-- Navigation end -->
 
-		<!-- Navigation end -->
+    <!-- Intro section start -->
+
+    <section id="intro" class="section backstretch">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="hello">
+                        <h1>Hello, I'm Jyoti Prakash</h1>
+                        <h3><span class="rotate">UI Developer. </span></h3>
+                    </div>
+
+                    <a href="#profile">
+                        <div class="mouse-icon">
+                            <div class="wheel"></div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div><!-- .row -->
+
+        </div><!-- .container -->
+    </section>
+
+    <!-- Intro section end -->
+
+    <!-- Profile contact callout section -->
+
+    <!--<section id="profile-contact">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="profile-item" id="mail">
+                        <i class="fa fa-envelope-o"></i>
+                        <h5><a href="#">er.jppradhan@gmail.com</a></h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="profile-item" id="mobile">
+                        <i class="fa fa-phone"></i>
+                        <h5>(+91) 8971254440</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="profile-item" id="address">
+                        <i class="fa fa-map-marker"></i>
+                        <h5>203 V. Raj Sunshine, Bellandur, Bangalore, India</h5>
+                    </div>
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+        </div>&lt;!&ndash; .container &ndash;&gt;
+
+    </section>-->
+
+    <!-- Profile contact callout section -->
+
+    <!-- Profile section start -->
+
+    <section id="profile" class="section">
+
+        <div class="row" id="profile-detail">
+            <div class="col-md-6 col-sm-6 col-xs-12" id="headline">
+                <div class="center-wrapper">
+                    <div class="center">
+                        <h2>Jyoti Prakash</h2>
+                        <p>UI Developer. JS Programmer.</p>
+                    </div>
+                </div>
+
+                <!--<img class="avatar profile-pic" src="/images/profile.jpg" alt="">-->
+            </div><!-- .Col-sm-6 #headline-->
+            <div class="col-md-6 col-sm-6 col-xs-12" id="profile-skill">
+                <div class="owl-carousel">
+                    <div class="item center-wrapper skill">
+                        <div class="center">
+                            <h3>Skillset</h3>
+
+                            <h5>UX Design</h5>
+                            <div class="skill-bar">
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-off"></div>
+                                <div class="skill-rate-off"></div>
+                            </div><!-- .skill-bar-->
+
+                            <h5>HTML / CSS3 / SASS</h5>
+                            <div class="skill-bar">
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-off"></div>
+                            </div><!-- .skill-bar-->
+
+                            <h5>Javascript</h5>
+                            <div class="skill-bar">
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                            </div><!-- .skill-bar-->
+
+                            <h5>Angular / React</h5>
+                            <div class="skill-bar">
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-on"></div>
+                                <div class="skill-rate-off"></div>
+                            </div><!-- .skill-bar-->
+                            <ul class="widget-social">
+                                <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- #profile-widget -->
+                    <div class="item center-wrapper" id="profile-desc">
+                        <div class="center-wrapper">
+                            <h3>Profesional Profile</h3>
+                            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
+                            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                        </div>
+                    </div><!-- #profile-desc -->
+                </div>
+            </div><!-- .Col-sm-6 -->
+        </div><!-- .row -->
+    </section>
+    <section class="section" id="services"><!-- services section start -->
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12 col-lg-5" id="cando">
+                <div class="cando-slider">
+                    <div class="center-wrapper item">
+                        <div class="center">
+                            <div class="service">
+                                <div class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <h4>Client Requirement</h4>
+                                <div class="text">
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper item">
+                        <div class="center">
+                            <div class="service">
+                                <div class="icon">
+                                    <i class="fa fa-image"></i>
+                                </div>
+                                <h4>Effective Solutions</h4>
+                                <div class="text">
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper item">
+                        <div class="center">
+                            <div class="service">
+                                <div class="icon">
+                                    <i class="fa fa-cog"></i>
+                                </div>
+                                <h4>Easy configure</h4>
+                                <div class="text">
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper item">
+                        <div class="center">
+                            <div class="service">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Clear code</h4>
+                                <div class="text">
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper item">
+                        <div class="center">
+                            <div class="service">
+                                <div class="icon">
+                                    <i class="fa fa-desktop"></i>
+                                </div>
+                                <h4>Responsive design</h4>
+                                <div class="text">
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper item">
+                        <div class="center">
+                            <div class="service">
+                                <div class="icon">
+                                    <i class="fa fa-life-ring"></i>
+                                </div>
+                                <h4>Support</h4>
+                                <div class="text">
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-7" id="cando-desc">
+                <div class="center-wrapper">
+                    <div class="center">
+                        <h3>What i can do</h3>
+                        <h5>My Services</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- services section end -->
+
+    <!-- Callout section start -->
+
+    <section class="callout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+                    <h3 class="status">My status</h3>
+                </div>
+
+                <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 desc">
+                    <h3>I'm currently working at Inkoniq IT Solutions.</h3>
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Callout section end -->
+
+    <!-- Resume section start -->
+
+    <!--<section id="resume" class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 headline">
+                    <h2>Resume</h2>
+                    <p>My education and experience.</p>
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+            <div class="row resume-items">
+
+                <div class="col-md-3">
+                    <h3>Education</h3>
+                </div>
+
+                <div class="col-md-6 col-sm-8 resume-item">
+                    <h4>Computer science</h4>
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <hr class="hidden-xs">
+                </div>
+
+                <div class="col-md-3 col-sm-4 resume-place" >
+                    <h4><i class="fa fa-suitcase"></i> Gandhi Institute for Technological Advancement</h4>
+                    <i class="fa fa-calendar"></i> 2008 - 2012
+                    <hr class="visible-xs">
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+            <div class="row resume-items">
+
+                <div class="col-md-3">
+                    <h3>Experience</h3>
+                </div>
+
+                <div class="col-md-6 col-sm-8 resume-item" >
+                    <h4>Front-end developer / Node js programmer</h4>
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <hr class="hidden-xs">
+                </div>
+
+                <div class="col-md-3 col-sm-4 resume-place" >
+                    <h4><i class="fa fa-suitcase"></i> Obelisk Solutions</h4>
+                    <i class="fa fa-calendar"></i> 2013 - 2014
+                    <hr class="visible-xs">
+                </div>
+
+                <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item" >
+                    <h4>UI developer / JS programmer</h4>
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <hr class="hidden-xs">
+                </div>
+
+                <div class="col-md-3 col-sm-4 resume-place " >
+                    <h4><i class="fa fa-suitcase"></i> Inkoniq</h4>
+                    <i class="fa fa-calendar"></i> 2014 - 2016
+                    <hr class="visible-xs">
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+            <div class="row">
+
+                <div class="col-md-6 col-md-offset-3">
+                    <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+        </div>&lt;!&ndash; .container &ndash;&gt;
+
+    </section>-->
+
+    <!-- Resume section end -->
+
+    <!-- Callout section start -->
+    <!-- Callout section end -->
+
+    <!-- Portfolio section start -->
+
+    <!--<section id="portfolio" class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 headline">
+                    <h2>Portfolio</h2>
+                    <p>My best works.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="/images/spidergram.png" class="pop-up" title="Caption 1">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-preview">
+                                <img src="/images/spidergram.png" alt="">
+                            </div>
+                            <div class="portfolio-item-description">
+                                <h3>Some work</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="/images/lofi.png" class="video-pop-up" title="Caption 2">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-preview">
+                                <img src="/images/lofi.png" alt="">
+                            </div>
+                            <div class="portfolio-item-description">
+                                <h3>Some work</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="/images/mweb.png" class="pop-up" title="Caption 3">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-preview">
+                                <img src="/images/mweb.png" alt="">
+                            </div>
+                            <div class="portfolio-item-description">
+                                <h3>Some work</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6" >
+                    <a href="/images/nutanix.png" class="pop-up" title="Caption 4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-preview">
+                                <img src="/images/nutanix.png" alt="">
+                            </div>
+                            <div class="portfolio-item-description">
+                                <h3>Some work</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="/images/sesame.png" class="pop-up" title="Caption 5">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-preview">
+                                <img src="/images/sesame.png" alt="">
+                            </div>
+                            <div class="portfolio-item-description">
+                                <h3>Some work</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="/images/agentx.png" class="pop-up" title="Caption 6">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-preview">
+                                <img src="/images/agentx.png" alt="">
+                            </div>
+                            <div class="portfolio-item-description">
+                                <h3>Some work</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+        </div>&lt;!&ndash; .container &ndash;&gt;
+
+    </section>-->
+
+    <!-- Portfolio section end -->
+
+    <!-- Contact section start -->
+
+    <!--<section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 headline">
+                    <h2>Contact Us</h2>
+                    <p>Drop us a line or give us a ring. We love to hear you.</p>
+                </div>
+
+                <div class="col-md-6">
+
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+
+                    <ul class="icon-list">
+                        <li><i class="fa fa-fw fa-map-marker"></i>203 V. Raj sunshine, Bellandur, Bangalore, INDIA</li>
+                        <li><i class="fa fa-fw fa-phone"></i>+91 8971254440</li>
+                        <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">support@site.com</a></li>
+                        <li><i class="fa fa-fw fa-globe"></i><a href="">http://www.site.com</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <form id="contact-form" role="form">
+
+                        <div class="form-group">
+                            <label class="sr-only" for="c_name">Name</label>
+                            <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only" for="c_email">Email address</label>
+                            <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-custom-1">
+                            <i class="fa fa-bullhorn icon-before"></i> Send it
+                        </button>
+
+                    </form>
+
+                    <div class="ajax-response"></div>
+
+                </div>
+
+            </div>&lt;!&ndash; .row &ndash;&gt;
+
+        </div>&lt;!&ndash; .container &ndash;&gt;
+
+    </section>-->
+
+    <!-- Contact section end -->
+
+    <!-- Footer start -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <p class="copy">
+                        © 2016 Jyoti Prakash, All Rights Reserved.
+                    </p>
+                </div>
+
+            </div><!-- .row -->
+
+        </div><!-- .container -->
+
+    </footer>
+
+    <!-- Footer end -->
 
-		<!-- Intro section start -->
 
-		<section id="intro" class="section">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12">
-
-						<div class="hello">
-							<h1>Hello, I'm Jyoti Prakash</h1>
-							<h3><span class="rotate">UI Developer. </span></h3>
-						</div>
-
-						<a href="#profile">
-							<div class="mouse-icon">
-								<div class="wheel"></div>
-							</div>
-						</a>
-
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		<div class="backstretch"><img src="/images/landing.jpg" ></div></section>
-
-		<!-- Intro section end -->
-
-		<!-- Profile contact callout section -->
-
-		<section id="profile-contact">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-sm-4">
-						<div class="profile-item" id="mail">
-							<i class="fa fa-envelope-o"></i>
-							<h5><a href="#">er.jppradhan@gmail.com</a></h5>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="profile-item" id="mobile">
-							<i class="fa fa-phone"></i>
-							<h5>(+91) 8971254440</h5>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="profile-item" id="address">
-							<i class="fa fa-map-marker"></i>
-							<h5>203 V. Raj Sunshine, Bellandur, Bangalore, India</h5>
-						</div>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Profile contact callout section -->
-
-		<!-- Profile section start -->
-
-		<section id="profile" class="section">
-
-			<div class="container">
-
-				<div class="row" id="profile-detail">
-
-					<div class="col-md-12 headline" id="headline">
-						<h2>Jyoti Prakash</h2>
-						<p>UI Developer. JS Programmer.</p>
-					</div>
-
-					<div class="col-md-3 col-sm-6 hidden-xs" id="profile-pic">
-						<img class="avatar" src="/images/profile.jpg" alt="">
-					</div>
-
-					<div class="col-md-3 col-sm-6" id="profile-skill">
-
-						<div class="profile-widget">
-							<h3>Skillset</h3>
-
-							<h5>UX Design</h5>
-							<div class="skill-bar">
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-off"></div>
-								<div class="skill-rate-off"></div>
-							</div>
-
-							<h5>HTML / CSS3 / SASS</h5>
-							<div class="skill-bar">
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-off"></div>
-							</div>
-
-							<h5>Javascript</h5>
-							<div class="skill-bar">
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-							</div>
-
-							<h5>Angular / React</h5>
-							<div class="skill-bar">
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-on"></div>
-								<div class="skill-rate-off"></div>
-							</div>
-						</div>
-
-						<div class="profile-widget">
-							<h3>Social Profiles</h3>
-							<ul class="widget-social">
-								<li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
-								<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-
-					</div><!-- .col-md-3 -->
-
-					<div class="col-md-6 col-sm-12" id="profile-desc">
-						<h3>Profesional Profile</h3>
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Profile section end -->
-
-		<!-- Callout section start -->
-
-		<section id="stats" class="callout">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-3 col-sm-12 hidden-xs">
-						<h3>My Stats</h3>
-					</div>
-
-					<div class="col-md-3 col-sm-4">
-						<div class="stat">
-							<div class="stat-icon">
-								<h2><i class="fa fa-coffee hidden-xs"></i><span class="timer" data-to="32">32</span></h2>
-							</div>
-							<h3>Cup of coffee</h3>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-4">
-						<div class="stat">
-							<div class="stat-icon">
-								<h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999">999</span></h2>
-							</div>
-							<h3>Line of code</h3>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-4">
-						<div class="stat">
-							<div class="stat-icon">
-								<h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="300">300</span>+</h2>
-							</div>
-							<h3>Happy customers</h3>
-						</div>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Callout section end -->
-
-		<!-- Services section start -->
-
-		<section id="services" class="section">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12 headline" >
-						<h2>What i can do</h2>
-						<p>My Services.</p>
-					</div>
-
-					<div class="col-md-12" id="cando">
-
-						<div class="row">
-
-							<div class="col-sm-4">
-								<div class="service">
-									<div class="icon">
-										<i class="fa fa-pencil"></i>
-									</div>
-									<h4>Client Requirement</h4>
-									<div class="text">
-										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="service">
-									<div class="icon">
-										<i class="fa fa-image"></i>
-									</div>
-									<h4>Effective Solutions</h4>
-									<div class="text">
-										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="service">
-									<div class="icon">
-										<i class="fa fa-cog"></i>
-									</div>
-									<h4>Easy configure</h4>
-									<div class="text">
-										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-									</div>
-								</div>
-							</div>
-
-						</div><!-- .row -->
-
-						<div class="row">
-
-							<div class="col-sm-4">
-								<div class="service">
-									<div class="icon">
-										<i class="fa fa-code"></i>
-									</div>
-									<h4>Clear code</h4>
-									<div class="text">
-										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="service">
-									<div class="icon">
-										<i class="fa fa-desktop"></i>
-									</div>
-									<h4>Responsive design</h4>
-									<div class="text">
-										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="service">
-									<div class="icon">
-										<i class="fa fa-life-ring"></i>
-									</div>
-									<h4>Support</h4>
-									<div class="text">
-										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-									</div>
-								</div>
-							</div>
-
-						</div><!-- .row -->
-
-					</div><!-- .col-md-12 -->
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Services section end -->
-
-		<!-- Callout section start -->
-
-		<section class="callout">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-3 hidden-xs">
-						<h3>My status</h3>
-					</div>
-
-					<div class="col-md-9 headline nomargin" >
-						<h3>I'm currently working at Inkoniq IT Solutions.</h3>
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-						<a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Callout section end -->
-
-		<!-- Resume section start -->
-
-		<section id="resume" class="section">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12 headline">
-						<h2>Resume</h2>
-						<p>My education and experience.</p>
-					</div>
-
-				</div><!-- .row -->
-
-				<div class="row resume-items">
-
-					<div class="col-md-3">
-						<h3>Education</h3>
-					</div>
-
-					<div class="col-md-6 col-sm-8 resume-item">
-						<h4>Computer science</h4>
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-						<hr class="hidden-xs">
-					</div>
-
-					<div class="col-md-3 col-sm-4 resume-place" >
-						<h4><i class="fa fa-suitcase"></i> Gandhi Institute for Technological Advancement</h4>
-						<i class="fa fa-calendar"></i> 2008 - 2012
-						<hr class="visible-xs">
-					</div>
-
-				</div><!-- .row -->
-
-				<div class="row resume-items">
-
-					<div class="col-md-3">
-						<h3>Experience</h3>
-					</div>
-
-					<div class="col-md-6 col-sm-8 resume-item" >
-						<h4>Front-end developer / Node js programmer</h4>
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-						<hr class="hidden-xs">
-					</div>
-
-					<div class="col-md-3 col-sm-4 resume-place" >
-						<h4><i class="fa fa-suitcase"></i> Obelisk Solutions</h4>
-						<i class="fa fa-calendar"></i> 2013 - 2014
-						<hr class="visible-xs">
-					</div>
-
-					<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item" >
-						<h4>UI developer / JS programmer</h4>
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-						<hr class="hidden-xs">
-					</div>
-
-					<div class="col-md-3 col-sm-4 resume-place " >
-						<h4><i class="fa fa-suitcase"></i> Inkoniq</h4>
-						<i class="fa fa-calendar"></i> 2014 - 2016
-						<hr class="visible-xs">
-					</div>
-
-				</div><!-- .row -->
-
-				<div class="row">
-
-					<div class="col-md-6 col-md-offset-3">
-						<a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Resume section end -->
-
-		<!-- Callout section start -->
-		<!-- Callout section end -->
-
-		<!-- Portfolio section start -->
-
-		<section id="portfolio" class="section">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12 headline">
-						<h2>Portfolio</h2>
-						<p>My best works.</p>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<a href="/images/spidergram.png" class="pop-up" title="Caption 1">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="/images/spidergram.png" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<a href="/images/lofi.png" class="video-pop-up" title="Caption 2">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="/images/lofi.png" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<a href="/images/mweb.png" class="pop-up" title="Caption 3">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="/images/mweb.png" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6" >
-						<a href="/images/nutanix.png" class="pop-up" title="Caption 4">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="/images/nutanix.png" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<a href="/images/sesame.png" class="pop-up" title="Caption 5">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">	
-									<img src="/images/sesame.png" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<a href="/images/agentx.png" class="pop-up" title="Caption 6">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="/images/agentx.png" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Portfolio section end -->
-
-		<!-- Contact section start -->
-
-		<section id="contact" class="section">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12 headline">
-						<h2>Contact Us</h2>
-						<p>Drop us a line or give us a ring. We love to hear you.</p>
-					</div>
-
-					<div class="col-md-6">
-
-						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
-
-						<ul class="icon-list">
-							<li><i class="fa fa-fw fa-map-marker"></i>203 V. Raj sunshine, Bellandur, Bangalore, INDIA</li>
-							<li><i class="fa fa-fw fa-phone"></i>+91 8971254440</li>
-							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">support@site.com</a></li>
-							<li><i class="fa fa-fw fa-globe"></i><a href="">http://www.site.com</a></li>
-						</ul>
-
-					</div>
-
-					<div class="col-md-6">
-
-						<form id="contact-form" role="form">
-
-							<div class="form-group">
-								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-							</div>
-
-							<div class="form-group">
-								<label class="sr-only" for="c_email">Email address</label>
-								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-							</div>
-
-							<div class="form-group">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
-							</div>
-
-							<button type="submit" class="btn btn-custom-1">
-								<i class="fa fa-bullhorn icon-before"></i> Send it
-							</button>
-
-						</form>
-
-						<div class="ajax-response"></div>
-
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Contact section end -->
-
-		<!-- Footer start -->
-
-		<footer id="footer">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12">
-						<p class="copy">
-							© 2016 Jyoti Prakash, All Rights Reserved.
-						</p>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</footer>
-
-		<!-- Footer end -->
-
-	</div>
     <script type="text/javascript" src="/javascripts/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="/javascripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="/javascripts/main.js"></script>
     
 </body>

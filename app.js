@@ -26,9 +26,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 if( app.get('env') === 'development' ) {
   app.use('/', routes);
   app.use('/users', users);
-} else {
+}/* else {
   app.use('/', underconstruction);
-}
+}*/
 
 
 
