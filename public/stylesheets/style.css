@@ -572,7 +572,214 @@ body {
     color: #ffffff;
 }
 /* Callout section end */
-/* Services section style start*/
+
+/* Resume section start */
+#resume {
+    overflow: hidden;
+    background: #151515;
+}
+.education, .experience{
+    height: 90vh;
+}
+.education {
+    background: url("../images/resume.jpg") no-repeat;
+    background-size: cover;
+    color: #151515;
+}
+.education .center {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.education h3 {
+    font-size: 40px;
+    font-family: Raleway;
+    font-weight: 700;
+}
+.education h4 {
+    font-family: Raleway;
+    font-weight: 500;
+}
+.education p {
+    font-style: italic;
+}
+
+.education .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: rgba(239, 190, 67, 0.7);
+}
+
+.btn-custom-2 {
+    background: transparent;
+    border: 2px solid #222;
+    padding: 15px 25px;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.btn-custom-2:hover, .btn-custom-2:focus, .btn-custom-2:active, .btn-custom-2.active {
+    background: #222;
+    border: 2px solid #222;
+    color: #FFF;
+}
+.experience {
+    color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.experience h3 {
+    font-size: 40px;
+    color: #49b6b2;
+}
+.experience .item h4 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+.experience .item h4.company {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.experience .item p {
+    margin-top: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.experience .owl-theme .owl-controls {
+    bottom: -40px;
+}
+/* Resume section end */
+/* Portfolio section Start */
+#portfolio{
+    background: #fff;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+#portfolio h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.portfolio-item {
+    margin-bottom: 15px;
+    overflow: hidden;
+    max-height: 220px;
+}
+
+.portfolio-item-preview {
+    position: relative;
+}
+.portfolio-item-description {
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    transition: all 0.125s ease-in-out 0s;
+}
+
+.portfolio-item-preview {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.portfolio-item:hover .portfolio-item-preview {
+    -webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.3) rotate(3deg);
+    -ms-transform: scale(1.3) rotate(3deg);
+    -o-transform: scale(1.3) rotate(3deg);
+    transform: scale(1.2) rotate(3deg);
+}
+
+.portfolio-item:hover .portfolio-item-description {
+    opacity: 1;
+    bottom: 0;
+}
+
+.portfolio-item-description {
+    background: rgba(255, 255, 255, .85);
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    left: 0;
+    padding: 25px;
+    text-align: center;
+    opacity: 0;
+    color: #222;
+}
+
+.portfolio-item img{
+    width: 100%;
+    overflow: hidden;
+}
+/* Portfolio section end */
+/* Contact section start */
+#contact {
+    background: #151515;
+}
+.contact_form, .map {
+    height: 90vh;
+}
+.contact_form {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.contact_form h3{
+    font-size: 40px;
+    color: #49b6b2;
+    font-weight: 700;
+    font-family: Raleway;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#email, #name, #message {
+    border-radius: 0;
+    height: 50px;
+    box-shadow: none;
+    outline: 0;
+}
+#email:focus, #name:focus, #message:focus {
+    border: 1px solid #49b6b2;
+    box-shadow: none;
+    outline: 0;
+}
+.btn-submit {
+    padding: 15px 40px;
+    background: #ffffff;
+    color: #151515;
+    border-radius: 0;
+    outline: 0;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    font-family: Raleway;
+}
+.btn-submit:hover,.btn-submit:focus,.btn-submit:active {
+    background: #49b6b2;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    outline: 0;
+}
+#contact-form-submit {
+    margin-top: 20px;
+}
+.contact_form .contact-link {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+}
+.contact_form .contact-link span{
+    padding-right: 15px;
+}
+/* Contact section end */
 .row {
     width: 100%;
     margin-left: auto;
