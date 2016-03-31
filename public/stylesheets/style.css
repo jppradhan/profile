@@ -7,12 +7,11 @@
  * General styles
 /* ---------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
 body {
-	font: 300 15px/1.6 'Raleway', serif, sans-serif;
+	font: 300 15px/1.6 'Roboto', serif, sans-serif;
 	color: #545454;
+    background: url('../images/concrete_seamless.png') repeat;
 }
 .mouse-icon {
 	position: relative;
@@ -73,13 +72,13 @@ body {
 	border: 0;
 	padding: 20px 0;
 	text-transform: uppercase;
-	color: #FFF !important;
+	color: #000 !important;
 }
 .navbar-brand {
-    color: #fff;
+    color: #000;
     font-size: 30px;
     font-weight: 600;
-    font-family: Raleway;
+    font-family: 'Roboto';
 }
 
 .center-wrapper {
@@ -99,17 +98,17 @@ body {
 #intro {
 	padding: 260px 0 160px 0;
 	text-align: center;
-	color: #FFF;
+	color: #000;
 }
 
 #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-	color: #FFF;
+	color: #000;
 }
 
 #footer {
-	background: #49b6b2;
+	background: #ffffff;
 	padding: 20px 0;
-	color: #FFF;
+	color: #000;
 }
 
 #footer .copy {
@@ -167,8 +166,8 @@ body {
 /* My Profile css START */
 /* Intro section style start*/
 .backstretch {
-	background: url("../images/landing.jpg") no-repeat;
-    background-size: cover;
+	/*background: url("../images/landing.jpg") no-repeat;
+    background-size: cover;*/
 }
 
 .fixed-menu {
@@ -307,7 +306,7 @@ body {
     -o-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    background-color: #fff;
+    background-color: #000;
     z-index: 1000;
 }
 
@@ -397,24 +396,26 @@ body {
     transition-delay: 0s;
     -webkit-backface-visibility: hidden
 }
+
+
 /* Intro section style end*/
 /* Profile section style start*/
 #profile {
     overflow: hidden;
-    background: #151515;
+    background: rgba(255, 255, 255, 1);
 }
 #headline {
     padding: 0;
-    background: url("../images/profile.jpg") no-repeat;
-    background-size: cover;
+    /*background: url("../images/profile.jpg") no-repeat;
+    background-size: cover;*/
     height: 90vh;
 }
 #headline h2{
-    color: #ffffff;
+    color: #000000;
     font-size: 40px;
 }
 #headline p {
-    color: #fff;
+    color: #000;
 }
 #headline img {
     width: 100%;
@@ -431,11 +432,11 @@ body {
 #profile-skill h6,
 #profile-skill p,
 #profile-skill {
-    color: #ffffff;
+    color: #000000;
 }
 
 .skill-bar {
-    background: #ffffff;
+    background: #000000;
     display: table;
     height: 4px;
     width: 200px;
@@ -444,8 +445,8 @@ body {
 }
 .skill-rate-on, .skill-rate-off {
     display: table-cell;
-    border-left: 2px solid #151515;
-    border-right: 2px solid #151515;
+    border-left: 2px solid rgba(255, 255, 255, 1);
+    border-right: 2px solid rgba(255, 255, 255, 1);
 }
 .skill-bar .skill-rate-on {
     background: #49b6b2;
@@ -485,7 +486,7 @@ body {
 
 .widget-social li a:hover{
     background: #EF4836;
-    color: #fff;
+    color: #000;
 }
 
 #profile-desc {
@@ -503,7 +504,7 @@ body {
 /* Services section style start*/
 #services {
     overflow: hidden;
-    background: #151515;
+    background: rgba(255, 255, 255, 1);
 }
 
 #cando-desc {
@@ -514,8 +515,8 @@ body {
     height: 90vh;
 }
 #cando-desc{
-    background: url('../images/cando.jpg') no-repeat;
-    background-size: cover;
+    /*background: url('../images/cando.jpg') no-repeat;
+    background-size: cover;*/
 }
 #cando-desc h3 {
     color: #f1c40f;
@@ -526,7 +527,7 @@ body {
     color: #2ecc71;
     font-size: 20px;
     font-weight: 700;
-    font-family: Raleway;
+    font-family: 'Roboto';
 }
 .cando-slider {
     height: 100%;
@@ -535,7 +536,7 @@ body {
     padding-left: 20%;
     padding-right: 20%;
     text-align: left;
-    color: #ffffff;
+    color: #000000;
 }
 .service .icon {
     font-size: 50px;
@@ -569,22 +570,22 @@ body {
 }
 .btn.callout-btn:hover {
     background: #49b6b2;
-    color: #ffffff;
+    color: #000000;
 }
 /* Callout section end */
 
 /* Resume section start */
 #resume {
     overflow: hidden;
-    background: #151515;
+    background: rgba(255, 255, 255, 1);
 }
 .education, .experience{
     height: 90vh;
 }
 .education {
-    background: url("../images/resume.jpg") no-repeat;
-    background-size: cover;
-    color: #151515;
+    /*background: url("../images/resume.jpg") no-repeat;
+    background-size: cover;*/
+    color: rgba(255, 255, 255, 1);
 }
 .education .center {
     text-align: left;
@@ -593,11 +594,11 @@ body {
 }
 .education h3 {
     font-size: 40px;
-    font-family: Raleway;
+    font-family: 'Roboto';
     font-weight: 700;
 }
 .education h4 {
-    font-family: Raleway;
+    font-family: 'Roboto';
     font-weight: 500;
 }
 .education p {
@@ -622,10 +623,10 @@ body {
 .btn-custom-2:hover, .btn-custom-2:focus, .btn-custom-2:active, .btn-custom-2.active {
     background: #222;
     border: 2px solid #222;
-    color: #FFF;
+    color: #000;
 }
 .experience {
-    color: #ffffff;
+    color: #000000;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -720,7 +721,7 @@ body {
 /* Portfolio section end */
 /* Contact section start */
 #contact {
-    background: #151515;
+    background: rgba(255, 255, 255, 1);
 }
 .contact_form, .map {
     height: 90vh;
@@ -733,7 +734,7 @@ body {
     font-size: 40px;
     color: #49b6b2;
     font-weight: 700;
-    font-family: Raleway;
+    font-family: 'Roboto';
     margin-bottom: 30px;
     text-align: left;
 }
@@ -752,16 +753,16 @@ body {
 .btn-submit {
     padding: 15px 40px;
     background: #ffffff;
-    color: #151515;
+    color: #000;
     border-radius: 0;
     outline: 0;
-    border: 2px solid #ffffff;
+    border: 2px solid #000;
     font-weight: 500;
-    font-family: Raleway;
+    font-family: 'Roboto';
 }
 .btn-submit:hover,.btn-submit:focus,.btn-submit:active {
     background: #49b6b2;
-    color: #ffffff;
+    color: #000;
     border: 2px solid #ffffff;
     outline: 0;
 }
@@ -771,7 +772,7 @@ body {
 .contact_form .contact-link {
     display: block;
     width: 100%;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 15px;
     text-align: left;
@@ -784,6 +785,33 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #animate-menu {
+        top: 6px;
+        left: -17px;
+    }
+    #profile-desc h3 {
+        font-size: 25px;
+    }
+    .skill h3 {
+        font-size: 25px;
+    }
+    #cando-desc {
+        display: none;
+    }
+    .btn.callout-btn {
+        margin-left: 23%;
+    }
+    .btn-custom-2 {
+        margin-left: 10%;
+    }
+    .contact_form h3 , .contact_form .contact-link{
+        text-align: center;
+    }
+    .contact_form, .map {
+        display: none;
+    }
 }
 @media (min-width: 768px) {
 	.navbar-toggle {
