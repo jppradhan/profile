@@ -95,6 +95,11 @@ window.addEventListener('load', function() {
         maxVal: ['0px'],
 		relate: ['linear'] 
 	});
+
+	$('#download_cv').on('click', function() {
+		var ref = window.open(window.location.href + 'downloadcv');
+		//ref.close();
+	});
 });
 //});
 
